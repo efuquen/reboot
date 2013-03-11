@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>dispatch</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../lib/template.css" />
+      <script type="text/javascript" src="../lib/jquery.js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+      <div id="definition">
+        <img src="../lib/package_big.png" />
+        
+        <h1>dispatch</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dispatch</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="dispatch.AuthVerbs" data-isabs="true">
+      <a id="AuthVerbs:AuthVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthVerbs.html"><span class="name">AuthVerbs</span></a><span class="result"> extends RequestVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.DefaultRequestVerbs" data-isabs="false">
+      <a id="DefaultRequestVerbs:DefaultRequestVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultRequestVerbs.html"><span class="name">DefaultRequestVerbs</span></a><span class="result"> extends MethodVerbs with UrlVerbs with ParamVerbs with AuthVerbs with HeaderVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.DelegatePromise" data-isabs="true">
+      <a id="DelegatePromise:DelegatePromise[D]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DelegatePromise.html"><span class="name">DelegatePromise</span></a><span class="tparams">[<span name="D">+D</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.Duration" data-isabs="false">
+      <a id="Duration:Duration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Duration.html"><span class="name">Duration</span></a><span class="params">(<span name="length">length: Long</span>, <span name="unit">unit: TimeUnit</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.FunctionHandler" data-isabs="false">
+      <a id="FunctionHandler:FunctionHandler[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FunctionHandler.html"><span class="name">FunctionHandler</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AsyncCompletionHandler[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.Guarantor" data-isabs="true">
+      <a id="Guarantor:Guarantor[A, B, That]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Guarantor.html"><span class="name">Guarantor</span></a><span class="tparams">[<span name="A">-A</span>, <span name="B">B</span>, <span name="That">That &lt;: Promise[B]</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.HeaderVerbs" data-isabs="true">
+      <a id="HeaderVerbs:HeaderVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HeaderVerbs.html"><span class="name">HeaderVerbs</span></a><span class="result"> extends RequestVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.HostVerbs" data-isabs="true">
+      <a id="HostVerbs:HostVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HostVerbs.html"><span class="name">HostVerbs</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.Http" data-isabs="false">
+      <a id="Http:Http"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Http.html"><span class="name">Http</span></a><span class="params">(<span name="client">client: AsyncHttpClient</span>, <span name="timeout">timeout: Duration</span>, <span name="promiseExecutor">promiseExecutor: Executor</span>, <span name="timer">timer: Timer</span>)</span><span class="result"> extends HttpExecutor with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Http executor with defaults</p>
+    </li><li visbl="pub" name="dispatch.HttpExecutor" data-isabs="true">
+      <a id="HttpExecutor:HttpExecutor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HttpExecutor.html"><span class="name">HttpExecutor</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.IdentityGuarantor" data-isabs="false">
+      <a id="IdentityGuarantor:IdentityGuarantor[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IdentityGuarantor.html"><span class="name">IdentityGuarantor</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Guarantor[Promise[T], T, Promise[T]]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.IterableGuarantor" data-isabs="false">
+      <a id="IterableGuarantor:IterableGuarantor[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IterableGuarantor.html"><span class="name">IterableGuarantor</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Guarantor[Iterable[Promise[T]], Iterable[T], Promise[Iterable[T]]]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.ListenableFuturePromise" data-isabs="false">
+      <a id="ListenableFuturePromise:ListenableFuturePromise[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ListenableFuturePromise.html"><span class="name">ListenableFuturePromise</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Promise[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.MethodVerbs" data-isabs="true">
+      <a id="MethodVerbs:MethodVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MethodVerbs.html"><span class="name">MethodVerbs</span></a><span class="result"> extends RequestVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.OkFunctionHandler" data-isabs="false">
+      <a id="OkFunctionHandler:OkFunctionHandler[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OkFunctionHandler.html"><span class="name">OkFunctionHandler</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends FunctionHandler[T] with OkHandler[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.OkHandler" data-isabs="true">
+      <a id="OkHandler:OkHandler[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="OkHandler.html"><span class="name">OkHandler</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AsyncHandler[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.ParamVerbs" data-isabs="true">
+      <a id="ParamVerbs:ParamVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ParamVerbs.html"><span class="name">ParamVerbs</span></a><span class="result"> extends RequestVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.Promise" data-isabs="true">
+      <a id="Promise:Promise[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Promise.html"><span class="name">Promise</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends PromiseSIP[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.PromiseSIP" data-isabs="true">
+      <a id="PromiseSIP:PromiseSIP[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PromiseSIP.html"><span class="name">PromiseSIP</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.RawUri" data-isabs="false">
+      <a id="RawUri:RawUri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RawUri.html"><span class="name">RawUri</span></a><span class="params">(<span name="scheme">scheme: Option[String]</span>, <span name="userInfo">userInfo: Option[String]</span>, <span name="host">host: Option[String]</span>, <span name="port">port: Option[Int]</span>, <span name="path">path: Option[String]</span>, <span name="query">query: Option[String]</span>, <span name="fragment">fragment: Option[String]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">URI representation with raw parts, so</p>
+    </li><li visbl="pub" name="dispatch.package#Req" data-isabs="false">
+      <a id="Req:Req"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Req</span><span class="result"> = <span name="com.ning.http.client.RequestBuilder" class="extype">RequestBuilder</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Type alias for RequestBuilder, our typical request definitions</p><div class="fullcomment"><div class="comment cmt"><p>Type alias for RequestBuilder, our typical request definitions</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="dispatch.RequestHandlerTupleBuilder" data-isabs="false">
+      <a id="RequestHandlerTupleBuilder:RequestHandlerTupleBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RequestHandlerTupleBuilder.html"><span class="name">RequestHandlerTupleBuilder</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Builds tuples of (Request, AsyncHandler) for passing to Http#apply.</p>
+    </li><li visbl="pub" name="dispatch.RequestVerbs" data-isabs="true">
+      <a id="RequestVerbs:RequestVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RequestVerbs.html"><span class="name">RequestVerbs</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.package#Res" data-isabs="false">
+      <a id="Res:Res"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Res</span><span class="result"> = <span name="com.ning.http.client.Response" class="extype">Response</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Type alias for Response, avoid need to import</p><div class="fullcomment"><div class="comment cmt"><p>Type alias for Response, avoid need to import</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="dispatch.SleepPromise" data-isabs="false">
+      <a id="SleepPromise:SleepPromise[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SleepPromise.html"><span class="name">SleepPromise</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Promise[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.StatusCode" data-isabs="false">
+      <a id="StatusCode:StatusCode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StatusCode.html"><span class="name">StatusCode</span></a><span class="params">(<span name="code">code: Int</span>)</span><span class="result"> extends Exception with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.package#Uri" data-isabs="false">
+      <a id="Uri:Uri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Uri</span><span class="result"> = <span name="java.net.URI" class="extype">URI</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Type alias for URI, avoid need to import</p><div class="fullcomment"><div class="comment cmt"><p>Type alias for URI, avoid need to import</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="dispatch.UrlVerbs" data-isabs="true">
+      <a id="UrlVerbs:UrlVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UrlVerbs.html"><span class="name">UrlVerbs</span></a><span class="result"> extends RequestVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.package#Executor" data-isabs="false">
+      <a id="Executor:Executor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version scala.this.deprecated.init$default$2) Use dispatch.HttpExecutor">Executor</span><span class="result"> = <a name="dispatch.HttpExecutor" class="extype" href="HttpExecutor.html">HttpExecutor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version scala.this.deprecated.init$default$2)</i> Use dispatch.HttpExecutor</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="dispatch.:/" data-isabs="false">
+      <a id=":/::/"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="$colon$div$.html"><span class="name" title="gt4s: $colon$div">:/</span></a><span class="result"> extends HostVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.BuildInfo" data-isabs="false">
+      <a id="BuildInfo:BuildInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BuildInfo$.html"><span class="name">BuildInfo</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.DaemonThreads" data-isabs="false">
+      <a id="DaemonThreads:DaemonThreads"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DaemonThreads$.html"><span class="name">DaemonThreads</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.Duration" data-isabs="false">
+      <a id="Duration:Duration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Duration$.html"><span class="name">Duration</span></a><span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.Http" data-isabs="false">
+      <a id="Http:Http"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Http$.html"><span class="name">Http</span></a><span class="result"> extends Http</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Singleton default Http executor, can be used directly or altered
+ with its case-class <code>copy</code></p>
+    </li><li visbl="pub" name="dispatch.IDNDomainHelpers" data-isabs="false">
+      <a id="IDNDomainHelpers:IDNDomainHelpers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IDNDomainHelpers$.html"><span class="name">IDNDomainHelpers</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.InternationalDomainConversionException" data-isabs="false">
+      <a id="InternationalDomainConversionException:InternationalDomainConversionException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InternationalDomainConversionException$.html"><span class="name">InternationalDomainConversionException</span></a><span class="result"> extends Exception with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.Promise" data-isabs="false">
+      <a id="Promise:Promise"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Promise$.html"><span class="name">Promise</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.PromiseEither" data-isabs="false">
+      <a id="PromiseEither:PromiseEither"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PromiseEither$.html"><span class="name">PromiseEither</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.PromiseIterable" data-isabs="false">
+      <a id="PromiseIterable:PromiseIterable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PromiseIterable$.html"><span class="name">PromiseIterable</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.PromiseRightIterable" data-isabs="false">
+      <a id="PromiseRightIterable:PromiseRightIterable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PromiseRightIterable$.html"><span class="name">PromiseRightIterable</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.RawUri" data-isabs="false">
+      <a id="RawUri:RawUri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RawUri$.html"><span class="name">RawUri</span></a><span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.UriEncode" data-isabs="false">
+      <a id="UriEncode:UriEncode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UriEncode$.html"><span class="name">UriEncode</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.as" data-isabs="false">
+      <a id="as:as"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="as/package.html"><span class="name">as</span></a>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.package#durationOrdering" data-isabs="false">
+      <a id="durationOrdering:Ordering[Duration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">durationOrdering</span><span class="result">: <span name="scala.math.Ordering" class="extype">Ordering</span>[<a name="dispatch.Duration" class="extype" href="Duration.html">Duration</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="dispatch.host" data-isabs="false">
+      <a id="host:host"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="host$.html"><span class="name">host</span></a><span class="result"> extends HostVerbs</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.package#implyRequestHandlerTuple" data-isabs="false">
+      <a id="implyRequestHandlerTuple(Req):RequestHandlerTupleBuilder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">implyRequestHandlerTuple</span><span class="params">(<span name="builder">builder: Req</span>)</span><span class="result">: <a name="dispatch.RequestHandlerTupleBuilder" class="extype" href="RequestHandlerTupleBuilder.html">RequestHandlerTupleBuilder</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="dispatch.package#implyRequestVerbs" data-isabs="false">
+      <a id="implyRequestVerbs(Req):DefaultRequestVerbs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">implyRequestVerbs</span><span class="params">(<span name="builder">builder: Req</span>)</span><span class="result">: <a name="dispatch.DefaultRequestVerbs" class="extype" href="DefaultRequestVerbs.html">DefaultRequestVerbs</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="dispatch.package#implyRunnable" data-isabs="false">
+      <a id="implyRunnable[U](() ⇒ U):Runnable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">implyRunnable</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: () ⇒ U</span>)</span><span class="result">: <span name="java.lang.Runnable" class="extype">Runnable</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="dispatch.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="dispatch.oauth" data-isabs="false">
+      <a id="oauth:oauth"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="oauth/package.html"><span class="name">oauth</span></a>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.retry" data-isabs="false">
+      <a id="retry:retry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="retry/package.html"><span class="name">retry</span></a>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.stream" data-isabs="false">
+      <a id="stream:stream"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="stream/package.html"><span class="name">stream</span></a>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="dispatch.url" data-isabs="false">
+      <a id="url:url"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="url$.html"><span class="name">url</span></a><span class="result"> extends (String) ⇒ RequestBuilder</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Deprecated Value Members</h3>
+              <ol><li visbl="pub" name="dispatch.As" data-isabs="false">
+      <a id="As:As"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="As$.html"><span class="name deprecated" title="Deprecated: (Since version scala.this.deprecated.init$default$2) use objects in dispatch.as package">As</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version scala.this.deprecated.init$default$2)</i> use objects in dispatch.as package</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
