@@ -1,5 +1,10 @@
 import sbt._
 
+
+import com.typesafe.sbt.SbtSite._
+import com.typesafe.sbt.SbtGhPages._
+import com.typesafe.sbt.SbtGit.GitKeys._
+
 object Builds extends sbt.Build {
   import Keys._
 
@@ -8,8 +13,8 @@ object Builds extends sbt.Build {
     "dispatch-all", file("."), settings =
       Defaults.defaultSettings ++ Common.settings ++ Seq(
         ls.Plugin.LsKeys.skipWrite := true,
-      publish := { }
-      )
+        publish := { }
+      ) 
     ).aggregate(core, liftjson, jsoup, tagsoup, json4sJackson, json4sNative)
 
   def module(name: String) =
@@ -20,7 +25,10 @@ object Builds extends sbt.Build {
               Common.testSettings)
       .dependsOn(ufcheck % "test->test")
 
-  lazy val core = module("core")
+  lazy val core = module("core").
+    settings(gitRemoteRepo := "git@github.com:efuquen/reboot.git").
+    settings(site.settings: _*).settings(ghpages.settings: _*).
+    settings(site.includeScaladoc("core/latest/api"): _*)
 
   lazy val liftjson = module("lift-json")
     .dependsOn(core)
