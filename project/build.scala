@@ -26,7 +26,7 @@ object Builds extends sbt.Build {
       .dependsOn(ufcheck % "test->test")
 
   lazy val core = module("core").
-    settings(gitRemoteRepo := "git@github.com:efuquen/reboot.git").
+    settings(gitRemoteRepo := "git@github.com:dispatch/reboot.git").
     settings(site.settings: _*).settings(ghpages.settings: _*).
     settings(site.includeScaladoc("core/latest/api"): _*)
 
